@@ -1,3 +1,5 @@
+//This is an practice example with ollie and nlptools to read lines
+//and output the extractions
 package edu.knowitall.example
 
 import edu.knowitall.ollie.Ollie
