@@ -16,8 +16,7 @@ object Extractor {
 		while(scanner.hasNext()){
 			val line = scanner.nextLine()
 			val graph = parser(line)	
-			print(ollie(graph))
+			println(ollie(graph))
 		}	
-		
 	}
 }
