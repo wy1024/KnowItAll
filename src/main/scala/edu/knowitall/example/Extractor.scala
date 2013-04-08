@@ -10,9 +10,7 @@ object Extractor {
 	def main(args: Array[String]){
 		val ollie = new Ollie() 
 		val parser = new StanfordParser()
-		val scanner = new Scanner(System.in)
-		while(scanner.hasNext()){
-			val line = scanner.nextLine()
+		for (line <- io.Source.stdin.getLines) {
 			val graph = parser(line)	
 			println(ollie(graph))
 		}	
