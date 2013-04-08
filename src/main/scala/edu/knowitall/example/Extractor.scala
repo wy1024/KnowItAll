@@ -8,8 +8,6 @@ import java.util.Scanner
 
 object Extractor {
 	def main(args: Array[String]){
-		val sentence = "hello world"
-		println(sentence)
 		val ollie = new Ollie() 
 		val parser = new StanfordParser()
 		val scanner = new Scanner(System.in)
