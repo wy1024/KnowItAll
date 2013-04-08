@@ -11,6 +11,6 @@ object Extractor extends App {
   val parser = new StanfordParser()
   for (line <- io.Source.stdin.getLines) {
     val graph = parser(line)	
-    println(ollie(graph))
+    ollie(graph).foreach(println)
   }	
 }
